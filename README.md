@@ -1,2 +1,93 @@
 # FotZIP
 FotZIP ZIP Manager
+FotZIP
+
+Version: 1.0.0
+Supported Platforms: Linux (x64), Windows (x64), macOS (x64)
+License: GNU GPL v3
+
+Overview
+
+FotZIP is a lightweight, single-file ZIP utility designed for creating and extracting ZIP archives quickly and securely.
+Currently, the application is command-line only (CLI). GUI version will be added in future releases.
+
+Features
+
+Create and extract ZIP archives.
+
+Cross-platform support: Linux, Windows, macOS.
+
+GPG detached signature support for verifying authenticity.
+
+Easy to use via terminal or command prompt.
+
+Security & Verification
+
+Each release is signed with a GPG detached signature to ensure integrity and authenticity.
+
+Verifying the Build
+
+Import the public key:
+
+gpg --import fotzip_public_key.asc
+
+
+Verify the detached signature:
+
+gpg --verify FotZIP.sig FotZIP
+
+
+If the output shows Good signature and the correct key ID (4419366131D22C571C21204E23EE58A626C1A820), the file is authentic.
+
+Any tampering or mismatched signature will be flagged as bad signature.
+
+Installation
+Linux / macOS
+chmod +x FotZIP
+./FotZIP [options]
+
+Windows
+
+Place FotZIP.exe in a folder.
+
+Run via Command Prompt:
+
+FotZIP.exe [options]
+
+Usage
+
+Basic examples:
+
+Create a ZIP archive:
+
+./FotZIP -c /path/to/source /path/to/archive.zip
+
+
+Extract a ZIP archive:
+
+./FotZIP -x /path/to/archive.zip /path/to/destination
+
+
+Display help:
+
+./FotZIP --help
+
+Known Issues
+
+ZIP64 archives may trigger warnings in edge cases.
+
+GUI version not yet implemented; CLI only.
+
+Platform-specific issues may occur.
+
+Future Plans
+
+GUI interface for all platforms.
+
+Improved ZIP64 support and advanced compression options.
+
+Automated builds for Windows, Linux, and macOS.
+
+License
+
+FotZIP is released under GNU GPL v3. See LICENSE file for details.
