@@ -1,6 +1,6 @@
 # FotZIP
 
-**Version:** 1.0.0
+**Version:** 1.0
 **Supported Platforms:** Linux (x64), Windows (x64), macOS (x64)
 **License:** GNU GPL v3
 
