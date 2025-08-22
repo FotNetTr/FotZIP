@@ -71,21 +71,45 @@ Basic examples:
 
 * **Create a ZIP archive:**
 
+1. Run the program:
+
 ```bash
-./FotZIP -c /path/to/source /path/to/archive.zip
+./FotZIP
 ```
+
+2. In the menu, select **2. Create ZIP**.
+3. Then, the program will ask for:
+
+   * **Folder path to ZIP** → The folder you want to compress
+   * **Output ZIP file path** → The path for the new ZIP file
+
+---
 
 * **Extract a ZIP archive:**
 
-```bash
-./FotZIP -x /path/to/archive.zip /path/to/destination
-```
-
-* **Display help:**
+1. Run the program:
 
 ```bash
-./FotZIP --help
+./FotZIP
 ```
+
+2. In the menu, select **1. Extract ZIP**.
+3. Then, the program will ask for:
+
+   * **ZIP file path** → The ZIP archive you want to extract
+   * **Extraction folder** → The folder where files will be extracted
+
+---
+
+* **Exit the program:**
+
+1. Run the program:
+
+```bash
+./FotZIP
+```
+
+2. In the menu, select **3. Exit** to quit the program.
 
 ---
 
